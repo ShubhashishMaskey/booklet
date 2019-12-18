@@ -145,7 +145,7 @@ export default class Dashboard extends Component {
                                           <small>
                                             Posted on{" "}
                                             {moment(book.createdDate).format(
-                                              "Do MMM, YYY"
+                                              "Do MMM, YYYY"
                                             )}
                                           </small>
                                         </p>
