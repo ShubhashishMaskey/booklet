@@ -5,8 +5,10 @@ import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import { indigo } from "@material-ui/core/colors";
 import routes from "./routes";
 import axios from "axios";
+//if on heroku uncomment this;
+// axios.defaults.baseURL = "https://booklet-app.herokuapp.com";
+axios.defaults.baseURL = "http://localhost:5000";
 
-axios.defaults.baseURL = "https://booklet-app.herokuapp.com";
 
 const theme = createMuiTheme({
   palette: {

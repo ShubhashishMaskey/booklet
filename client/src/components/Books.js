@@ -63,6 +63,11 @@ export default class Books extends Component {
             </div>
           </div>
         )}
+        {!isFetching && books.length === 0 && (
+          <div className="text-center">
+            <h1>Book List are empty.</h1>
+          </div>
+        )}
         {isFetching ? (
           <div className="text-center">
             <Icon type="sync" spin />
@@ -105,7 +110,7 @@ export default class Books extends Component {
                                 <small>
                                   Posted on{" "}
                                   {moment(book.createdDate).format(
-                                    "Do MMM, YYY"
+                                    "Do MMM, YYYY"
                                   )}
                                 </small>
                               </p>

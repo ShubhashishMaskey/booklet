@@ -17,7 +17,7 @@ export default localStorage.token ? (
 ) : (
   <Switch>
     <Route path="/" exact component={Books}></Route>
-    <Route path="/add-books" exact component={AddBooks}></Route>
+    <Route path="/books" exact component={Books}></Route>
     <Route path="/auth/register" exact component={Authentication}></Route>
     <Route path="/auth/login" exact component={Authentication}></Route>
     <Route path="*" component={Error}></Route>

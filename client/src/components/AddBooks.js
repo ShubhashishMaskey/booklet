@@ -131,7 +131,6 @@ export default withStyles(styles)(
                     name="author"
                     size="large"
                     onChange={this.handleChange}
-                    visibilityToggle={true}
                   />
                 </Form.Item>
                 <Form.Item>
