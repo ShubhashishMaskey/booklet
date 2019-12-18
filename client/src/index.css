@@ -1,0 +1,32 @@
+body,
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: "Montserrat", sans-serif;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+/* overriding core Material-UI and Antd styles*/
+.MuiButton-root,
+.MuiCard-root,
+.MuiPaper-root,
+.ant-input,
+.alert,
+.card {
+  border-radius: 0 !important;
+}
+.ant-form-item {
+  margin-bottom: 5px !important;
+}
+.anticon.anticon-sync {
+  font-size: 18px;
+  margin: 4px auto;
+}

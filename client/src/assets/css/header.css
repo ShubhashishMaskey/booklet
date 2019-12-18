@@ -1,0 +1,48 @@
+.navbar {
+  background-color: #283593;
+  padding: 0;
+}
+.navbar-brand {
+  padding-left: 1rem;
+  font: italic 36px "Cookie", cursive;
+}
+.nav-link {
+  margin: 0 !important;
+  padding: 0 !important;
+  color: rgba(255, 255, 255, 0.7);
+}
+.navbar .MuiIconButton-root {
+  color: white !important;
+  cursor: pointer;
+}
+.navbar .trigger-button {
+  border-radius: 0;
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar .trigger-button {
+    display: block !important;
+  }
+}
+.dropdown-menu {
+  padding: 0;
+  margin-right: 1rem;
+}
+.dropdown-divider {
+  margin: 0;
+}
+.dropdown-item {
+  padding: 0.5rem;
+}
+.dropdown-item:active.danger-text {
+  background-color: #dc3545;
+  color: white;
+}
+.danger-text,
+.danger-text:hover {
+  color: #dc3545;
+}
+.trigger-button:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}

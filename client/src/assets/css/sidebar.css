@@ -1,0 +1,56 @@
+.sidebar nav {
+  height: 100%;
+  min-width: 200px;
+  max-width: 200px;
+  background-color: #f6f5f7;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: all 0.6s cubic-bezier(0.945, 0.02, 0.27, 0.665);
+  transform-origin: bottom left;
+  z-index: 9999;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 4px 0px,
+    rgba(0, 0, 0, 0.8) 0px 0px 6px 0px;
+  color: black;
+}
+.sidebar nav.active {
+  margin-right: -210px;
+}
+.sidebar nav .close-toggle {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-bottom: 1px solid darkgrey;
+}
+.sidebar nav .close-toggle .MuiSvgIcon-root {
+  cursor: pointer;
+}
+.navbar .trigger-button {
+  border-radius: 0;
+  display: none;
+}
+.trigger-button:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.sidebar nav ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.sidebar nav ul li .menu-item {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+.sidebar nav ul li .menu-item:hover {
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.sidebar nav ul li.active > .menu-item {
+  background-color: rgba(0, 0, 0, 0.5);
+}

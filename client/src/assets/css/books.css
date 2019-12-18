@@ -1,0 +1,12 @@
+.booklet__books-container .anticon.anticon-sync {
+  font-size: 3em;
+}
+.books__book-name::first-letter {
+  font-size: 1.5em;
+}
+.books__book-name sub {
+  text-transform: initial !important;
+}
+.books__book-description::first-letter {
+  text-transform: capitalize;
+}
